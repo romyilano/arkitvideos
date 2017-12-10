@@ -15,7 +15,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
-    let videoURL = URL(string: "https://devstreaming-cdn.apple.com/videos/wwdc/2017/602pxa6f2vw71ze/602/602_sd_introducing_arkit_augmented_reality_for_ios.mp4")
+    // let videoURL = URL(string: "https://devstreaming-cdn.apple.com/videos/wwdc/2017/602pxa6f2vw71ze/602/602_sd_introducing_arkit_augmented_reality_for_ios.mp4")
+    let videoPath: String? = Bundle.main.path(forResource: "noisbridge_kqed", ofType: "mp4")
+    
     struct AspectRatio {
         static let width: CGFloat = 320
         static let height: CGFloat = 240
@@ -43,8 +45,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     // thanks andrew turkin - > https://github.com/AndrewTurkin/ARKitVideo.git
     func createAVPlayerStuff() {
+        guard let path = videoPath else {
+            return }
         // create AVPlayer
-        let player = AVPlayer(url: videoURL!)
+        let videoURL = URL.init(fileURLWithPath: path)
+        
+        let player = AVPlayer(url: videoURL)
         // place AVPlayer on SKVideoNode
         let playerNode = SKVideoNode(avPlayer: player)
         // flip video upside down
