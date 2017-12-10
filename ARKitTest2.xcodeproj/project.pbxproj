@@ -49,6 +49,7 @@
 		1C011EF61FDDD42E00D94138 /* ARKitTest2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitTest2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C011EFA1FDDD42E00D94138 /* ARKitTest2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitTest2UITests.swift; sourceTree = "<group>"; };
 		1C011EFC1FDDD42E00D94138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C011F081FDDD7E100D94138 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		1C011ECC1FDDD42D00D94138 = {
 			isa = PBXGroup;
 			children = (
+				1C011F081FDDD7E100D94138 /* README.md */,
 				1C011ED71FDDD42D00D94138 /* ARKitTest2 */,
 				1C011EEE1FDDD42E00D94138 /* ARKitTest2Tests */,
 				1C011EF91FDDD42E00D94138 /* ARKitTest2UITests */,

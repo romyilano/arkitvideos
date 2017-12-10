@@ -8,13 +8,14 @@
 
 import UIKit
 import SceneKit
+//import SpriteKit // you don't have to import spriteKit if you have scenekit or arkit? interesting
 import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
-    let videoURL = URL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")
+    let videoURL = URL(string: "https://devstreaming-cdn.apple.com/videos/wwdc/2017/602pxa6f2vw71ze/602/602_sd_introducing_arkit_augmented_reality_for_ios.mp4")
     struct AspectRatio {
         static let width: CGFloat = 320
         static let height: CGFloat = 240
@@ -40,6 +41,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         createAVPlayerStuff()
     }
     
+    // thanks andrew turkin - > https://github.com/AndrewTurkin/ARKitVideo.git
     func createAVPlayerStuff() {
         // create AVPlayer
         let player = AVPlayer(url: videoURL!)
