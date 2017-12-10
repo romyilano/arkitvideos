@@ -15,6 +15,7 @@
 		1C011EE51FDDD42D00D94138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C011EE31FDDD42D00D94138 /* LaunchScreen.storyboard */; };
 		1C011EF01FDDD42E00D94138 /* ARKitTest2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C011EEF1FDDD42E00D94138 /* ARKitTest2Tests.swift */; };
 		1C011EFB1FDDD42E00D94138 /* ARKitTest2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C011EFA1FDDD42E00D94138 /* ARKitTest2UITests.swift */; };
+		1C011F0A1FDDDDC600D94138 /* noisbridge_kqed.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1C011F091FDDDDC600D94138 /* noisbridge_kqed.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		1C011EFA1FDDD42E00D94138 /* ARKitTest2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitTest2UITests.swift; sourceTree = "<group>"; };
 		1C011EFC1FDDD42E00D94138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C011F081FDDD7E100D94138 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1C011F091FDDDDC600D94138 /* noisbridge_kqed.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = noisbridge_kqed.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1C011ED81FDDD42D00D94138 /* AppDelegate.swift */,
+				1C011F091FDDDDC600D94138 /* noisbridge_kqed.mp4 */,
 				1C011EDA1FDDD42D00D94138 /* art.scnassets */,
 				1C011EDC1FDDD42D00D94138 /* ViewController.swift */,
 				1C011EDE1FDDD42D00D94138 /* Main.storyboard */,
@@ -239,6 +242,7 @@
 			files = (
 				1C011EDB1FDDD42D00D94138 /* art.scnassets in Resources */,
 				1C011EE51FDDD42D00D94138 /* LaunchScreen.storyboard in Resources */,
+				1C011F0A1FDDDDC600D94138 /* noisbridge_kqed.mp4 in Resources */,
 				1C011EE21FDDD42D00D94138 /* Assets.xcassets in Resources */,
 				1C011EE01FDDD42D00D94138 /* Main.storyboard in Resources */,
 			);
