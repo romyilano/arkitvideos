@@ -14,8 +14,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
+    let videoURL = URL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")
+    struct AspectRatio {
+        static let width: CGFloat = 320
+        static let height: CGFloat = 240
+    }
+    let AspectDiv: CGFloat = 1000
     
-    
+    //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
