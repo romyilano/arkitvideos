@@ -41,7 +41,34 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     
     func createAVPlayerStuff() {
+        // create AVPlayer
+        let player = AVPlayer(url: videoURL!)
+        // place AVPlayer on SKVideoNode
+        let playerNode = SKVideoNode(avPlayer: player)
+        // flip video upside down
+        playerNode.yScale = -1
         
+        // create SKScene and set player node on it
+        let spriteKitScene = SKScene(size: CGSize(width: AspectRatio.width, height: AspectRatio.height))
+        spriteKitScene.scaleMode = .aspectFit
+        playerNode.position = CGPoint(x: spriteKitScene.size.width/2, y: spriteKitScene.size.height/2)
+        playerNode.size = spriteKitScene.size
+        spriteKitScene.addChild(playerNode)
+        
+        // create 3D SCNNode and set SKScene as a material
+        let videoNode = SCNNode()
+        videoNode.geometry = SCNPlane(width: 0.2, height: 0.1)
+        videoNode.geometry?.firstMaterial?.diffuse.contents = spriteKitScene
+        videoNode.geometry?.firstMaterial?.isDoubleSided = true
+        // place SCNNode inside ARKit 3D coordinate space
+        videoNode.position = SCNVector3(x: 0, y: 0, z: -0.5)
+        
+        // create a new scene
+        let scene = SCNScene()
+        scene.rootNode.addChildNode(videoNode)
+        // set the scene to the view
+        sceneView.scene = scene
+        playerNode.play()
     }
     
     override func viewWillAppear(_ animated: Bool) {
