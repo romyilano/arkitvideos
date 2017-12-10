@@ -36,6 +36,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the scene to the view
         sceneView.scene = scene
+        
+        createAVPlayerStuff()
+    }
+    
+    func createAVPlayerStuff() {
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
