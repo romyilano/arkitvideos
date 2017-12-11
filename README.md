@@ -1,6 +1,6 @@
 #  Hacking a video at Noisebridge iOS Sunday Morning
 
-![image](images/Noisebridge.png)
+![image](images/noisebridge.png)
 
 
 # Code
